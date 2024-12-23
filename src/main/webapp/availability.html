@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Availability</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding-top: 20px;
+        }
+        .availability-header {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .warning {
+            color: red;
+            margin-bottom: 10px;
+        }
+        .search-box {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .search-box input, .search-box button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .rooms-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .rooms-table th, .rooms-table td {
+            padding: 10px;
+            border: 1px solid #cccccc;
+            text-align: center;
+        }
+        .rooms-table th {
+            background-color: #2f78cf;
+            color: white;
+        }
+        .rooms-table td {
+            background-color: #f9f9f9;
+        }
+        .room-type {
+            text-align: left;
+            color: #0071c2;
+            text-decoration: none;
+        }
+        .show-prices-btn {
+            background-color: #0071c2;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="availability-header">Availability</div>
+    <div class="warning">⚠️ Select dates to see this property's availability and prices</div>
+    
+    <div class="search-box">
+        <input type="text" placeholder="Check-in date — Check-out date">
+        <input type="text" value="2 adults · 0 children · 1 room">
+        <button class="show-prices-btn">Search</button>
+    </div>
+
+    <table class="rooms-table">
+        <thead>
+            <tr>
+                <th>Room type</th>
+                <th>Number of guests</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#" class="room-type">Superior Twin Room</a><br>2 single beds 🛏️</td>
+                <td>👥</td>
+                <td><button class="show-prices-btn">Show prices</button></td>
+            </tr>
+            <tr>
+                <td><a href="#" class="room-type">Executive Double or Twin Room</a><br>2 single beds 🛏️</td>
+                <td>👥</td>
+                <td><button class="show-prices-btn">Show prices</button></td>
+            </tr>
+            <tr>
+                <td><a href="#" class="room-type">Premier Double or Twin Room</a><br>2 single beds 🛏️</td>
+                <td>👥</td>
+                <td><button class="show-prices-btn">Show prices</button></td>
+            </tr>
+            <tr>
+                <td><a href="#" class="room-type">Superior Twin Room</a><br>1 large double bed 🛏️</td>
+                <td>👥</td>
+                <td><button class="show-prices-btn">Show prices</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
